@@ -220,11 +220,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad216459c914fb58bc572c96d587702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 2934851299200569815, guid: c14e0b3aef64ed84ebfdf32c2def9cac, type: 3}
+  playerPrefab: {fileID: 2934851299200569815, guid: c14e0b3aef64ed84ebfdf32c2def9cac,
+    type: 3}
   roomCode: 123
   score: 0
   scoreTextPlayer1: {fileID: 1808725817}
   scoreTextPlayer2: {fileID: 2072156197}
+  newData: 
 --- !u!4 &330732770
 Transform:
   m_ObjectHideFlags: 0
@@ -248,83 +250,108 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1488774288987972495, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 1488774288987972495, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: webDriverDirectory
       value: Assets/
       objectReference: {fileID: 0}
-    - target: {fileID: 1488774288987972495, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 1488774288987972495, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: includeJavaScriptFiles.Array.data[0]
       value: Playroomkit/modules/PlayroomMockBridge.js
       objectReference: {fileID: 0}
-    - target: {fileID: 1957495583081457048, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 1957495583081457048, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_Name
       value: PlayroomMockManager
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 3746181030263044757, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5593001685836374760, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 5593001685836374760, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: mockMode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5593001685836374760, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 5593001685836374760, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: insertCoinCaller
       value: 
       objectReference: {fileID: 330732768}
-    - target: {fileID: 8899696337967424923, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 8899696337967424923, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: browser
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8899696337967424923, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 8899696337967424923, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: httpServerPort
       value: 6510
       objectReference: {fileID: 0}
-    - target: {fileID: 8899696337967424923, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 8899696337967424923, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: webDriverDirectory
-      value: Assets\
+      value: chrome-win64
       objectReference: {fileID: 0}
-    - target: {fileID: 8987662522597341863, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 8987662522597341863, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: mockMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8987662522597341863, guid: 1b30fa3a265114a45a7e23165a20aecc, type: 3}
+    - target: {fileID: 8987662522597341863, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
+      propertyPath: enableLogs
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987662522597341863, guid: 1b30fa3a265114a45a7e23165a20aecc,
+        type: 3}
       propertyPath: insertCoinCaller
       value: 
       objectReference: {fileID: 330732768}
@@ -496,7 +523,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
+    type: 3}
   m_Color: {r: 0.24705882, g: 0.60784316, b: 0.043137256, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -504,7 +532,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1433174484
