@@ -53,7 +53,7 @@ public class LobbyManager : MonoBehaviour
 
     public virtual void Start()
     {
-        Debug.Log("Staring Lobby");
+        Debug.Log("[Unity Log] Staring Lobby");
         totalPlayersJoined = 0;
         playerManagers = new List<PlayerManager>();
         availableSpawnIdx = new List<int>();
@@ -144,13 +144,14 @@ public class LobbyManager : MonoBehaviour
         string playerId = _playroomKit.GetState<string>("winner");
         raceStarted = false;
         PlayerManager player = playerManagers.Find(x => x.playroomId == playerId);
-        Debug.Log("WipeoutRace WinnerID Recieved " + playerId);
+        Debug.Log("[Unity Log] WinnerID Recieved " + playerId);
         string winner = player.playerIdx == 0 ? "Blue" : "Pink";
         string color = winner == "Blue"? "#71ABB2" : "#BC8782";
-        uiController.ShowText($"FINISH\n <color={color}> {winner}</color> Wins");
+        uiController.ShowText($"FINISH\n<color={color}> {winner}</color> Wins");
         uiController.Show(true);
-        if (_playroomKit.IsHost())
+        if (_playroomKit.IsHost()){
             uiController.ShowButton(true);
+        }
         foreach (PlayerManager p in playerManagers)
         {
             p.EndRace(p.playroomId == playerId);
@@ -158,7 +159,7 @@ public class LobbyManager : MonoBehaviour
     }
 
     public virtual void EndGame(string playerId){
-        Debug.Log("WipeoutRace WinnerID initiate " + playerId);
+        Debug.Log("[Unity Log] WinnerID initiate " + playerId);
         _playroomKit.SetState("winner", playerId,true);
         _playroomKit.RpcCall("end", "", PlayroomKit.RpcMode.ALL);
     }

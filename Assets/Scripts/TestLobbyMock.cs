@@ -64,7 +64,7 @@ public class TestLobbyMock : LobbyManager
 
         string winner = player.playerIdx == 0 ? "Blue" : "Pink";
         string color = winner == "Blue"? "#71ABB2" : "#BC8782";
-        uiController.ShowText($"FINISH\n <color={color}> {winner}</color> Wins");
+        uiController.ShowText($"FINISH\n<color={color}> {winner}</color> Wins");
         uiController.Show(true);
         uiController.ShowButton(true);
         foreach (PlayerManager p in playerManagers)

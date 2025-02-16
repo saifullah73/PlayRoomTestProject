@@ -45,15 +45,16 @@ public class PlayerManager : MonoBehaviour
         if (isMyPlayer){
             cameraManger.Init(playerModel,cameraLookAt);
         }
-        
-        animator.SetBool("running", value: false);
-        animator.SetBool("jumping", false);
     }
 
     public void ResetAnims(){
-        animator.SetBool("running", value: false);
-        animator.SetBool("jumping", false);
+        
         animator.SetTrigger("reset");
+        animator.SetBool("running",false);
+        animator.SetBool("jumping", false);
+        animator.ResetTrigger("win");
+        animator.ResetTrigger("lost");
+        //animator.ResetTrigger("reset");
     }
 
     void Start()
